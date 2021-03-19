@@ -4,13 +4,14 @@ import lombok.Data;
 
 @Data
 public class User {
-    private Long id;
+    private int id;
     private String login;
     private String pass;
     private String email;
-    private Integer role;
+    private int role;
 
-//    public User(Long id, String login, String pass, String email, int role) {
+
+    //    public User(Long id, String login, String pass, String email, int role) {
 //        this.id = id;
 //        this.login = login;
 //        this.pass = pass;

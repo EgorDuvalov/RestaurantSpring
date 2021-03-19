@@ -23,8 +23,8 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public void addUser(User user) {
-        jdbcTemplate.query(ADD_USER, new BeanPropertyRowMapper<>(User.class),
-                user.getLogin(), user.getEmail(), user.getRole());
+        jdbcTemplate.update(ADD_USER,
+                user.getLogin(), user.getPass(), user.getEmail(), user.getRole());
     }
 
     @Override

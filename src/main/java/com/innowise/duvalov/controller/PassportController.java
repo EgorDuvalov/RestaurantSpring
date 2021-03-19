@@ -1,6 +1,5 @@
 package com.innowise.duvalov.controller;
 
-import com.innowise.duvalov.dao.UserDAO;
 import com.innowise.duvalov.dao.impl.UserDAOImpl;
 import com.innowise.duvalov.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
